@@ -1,0 +1,90 @@
+$width768: 768px;
+$width576: 576px;
+
+.halls-page {
+  width: 100%;
+  max-width: 1400px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: $width576) {
+  }
+
+  .hall-item {
+    display: flex;
+    margin-bottom: 70px;
+    @media (max-width: $width768) {
+      flex-direction: column;
+    }
+
+    .border-carousel {
+      background: black;
+      border: 5px solid #674FFF;
+      z-index: 10;
+      box-shadow: 0 0 20px 2px #674FFF;
+      @media (max-width: $width768) {
+        border: none;
+        box-shadow: 0 0 0 0;
+      }
+
+    }
+
+    .border-box {
+      height: 360px;
+      width: 640px;
+      border: 5px solid #c4c4c4;
+      position: absolute;
+      margin: 40px;
+      z-index: 2;
+      box-shadow: 0 0 20px 2px #c4c4c4;
+      @media (max-width: $width768) {
+        display: none;
+      }
+    }
+
+    .hall-description {
+      margin-left: 50px;
+      @media (max-width: $width768) {
+        margin: 0;
+        text-align: center;
+      }
+
+      .title {
+        color: white;
+        font-size: 50px;
+        border-bottom: 5px solid white;
+        text-align: center;
+        @media (max-width: $width576) {
+          font-size: 35px;
+        }
+      }
+
+      .price {
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        @media (max-width: $width576) {
+          font-size: 23px;
+        }
+      }
+
+      .main-text {
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 10px;
+        @media (max-width: $width576) {
+          font-size: 15px;
+        }
+      }
+
+      .more-text {
+        margin-top: 10px;
+        font-size: 15px;
+        color: white;
+      }
+    }
+  }
+
+
+}

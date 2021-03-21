@@ -1,0 +1,150 @@
+$width768: 768px;
+$width576: 576px;
+
+.main-page {
+  height: 100%;
+  &__content {
+    margin-top: 10%;
+    display: flex;
+    @media (max-width: $width768) {
+      max-width: none;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+    @media (max-width: $width576) {
+      max-width: none;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .text-about {
+
+      .title {
+        display: block;
+        position: relative;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 85px;
+        color: white;
+        z-index: 10;
+        animation: neon .08s ease-in-out infinite alternate;
+        @media (max-width: $width768) {
+          font-size: 60px;
+          text-align: center;
+        }
+        @media (max-width: $width576) {
+          font-size: 40px;
+          text-align: center;
+        }
+      }
+
+      .description {
+        position: relative;
+        color: white;
+        font-weight: 300;
+        font-size: 28px;
+        z-index: 10;
+        margin-top: 20px;
+        @media (max-width: $width768) {
+          text-align: center;
+          font-size: 25px;
+        }
+        @media (max-width: $width576) {
+          text-align: center;
+          font-size: 14px
+        }
+      }
+    }
+
+    .icons-about {
+      display: flex;
+      margin-left: 10%;
+      margin-top: 4%;
+      @media (max-width: $width768) {
+        margin: 30px 0;
+        justify-content: center;
+      }
+      @media (max-width: $width576) {
+        margin: 30px 0;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      &__row {
+        @media (max-width: $width576) {
+          display: flex;
+          margin: 0 0 30px 0;
+          justify-content: center;
+        }
+        .box-icon {
+          margin: 0 70px 70px 0;
+          @media (max-width: $width576) {
+            margin: 0 20px;
+          }
+          .icon-about {
+            width: 12vh;
+            height: 12vh;
+            border: 4px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 54px #6a6bae;
+            position: relative;
+            @media (max-width: $width576) {
+              width: 100px;
+              height: 100px;
+              margin: 0;
+            }
+
+            img {
+              position: relative;
+              top: 18px;
+              left: 20px;
+              height: 65%;
+              width: 65%;
+              @media (max-width: $width576) {
+                height: 58%;
+                width: 58%;
+              }
+            }
+
+          }
+
+          .text-box {
+            position: relative;
+            margin-top: 10px;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            @media (max-width: $width576) {
+              font-size: 12px;
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+
+}
+
+@keyframes neon {
+  from {
+    text-shadow:
+            0 0 6px rgba(202,228,225,0.92),
+            0 0 30px rgba(202,228,225,0.34),
+            0 0 12px rgba(30,132,242,0.52),
+            0 0 21px rgba(30,132,242,0.92),
+            0 0 34px rgba(30,132,242,0.78),
+            0 0 54px rgba(30,132,242,0.92);
+  }
+  to {
+    text-shadow:
+            0 0 6px rgba(202,228,225,0.98),
+            0 0 30px rgba(202,228,225,0.42),
+            0 0 12px rgba(30,132,242,0.58),
+            0 0 22px rgba(30,132,242,0.84),
+            0 0 38px rgba(30,132,242,0.88),
+            0 0 60px rgba(30,132,242,1);
+  }
+}

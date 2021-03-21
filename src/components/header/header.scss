@@ -1,0 +1,57 @@
+$width768: 768px;
+
+.header {
+  background: #e9e9e9;
+  width: 100%;
+  height: 4%;
+  @media (max-width: $width768) {
+    display: none;
+  }
+  &__row {
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__icons {
+      .icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 50px;
+        cursor: pointer;
+      }
+
+      .vk-icon {
+        width: 33px;
+        height: 33px;
+        position: relative;
+        top: 3px;
+      }
+    }
+
+    &__main-logo {
+      font-size: 35px;
+      font-family: KoHo, sans-serif;
+      color: #FFFFFF;
+      -webkit-text-stroke: 2px black;
+
+      &:hover {
+        -webkit-text-stroke: 2px #451a86;
+        transition: 0.3s;
+      }
+    }
+
+    &__phone-number {
+      font-size: 20px;
+
+      a {
+        color: black;
+
+        &:hover {
+          color: #4739a9;
+        }
+      }
+    }
+  }
+}

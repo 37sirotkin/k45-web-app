@@ -1,0 +1,132 @@
+$width768: 768px;
+$width576: 576px;
+
+.navbar {
+  .burger-nav-close {
+    display: none;
+    @media (max-width: $width768) {
+      display: block;
+    }
+    transition: 1s;
+    width: 100%;
+    height: 50px;
+    background: white;
+    @media (max-width: $width576) {
+      width: 100%;
+      height: 45px;
+    }
+    .all-items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 20px 0 20px;
+      transition: 1s;
+      .menu-icon {
+        @media (max-width: $width576) {
+          width: 40px;
+          height: 40px;
+        }
+        width: 45px;
+        height: 45px;
+
+      }
+      .phone-number {
+        font-size: 22px;
+        @media (max-width: $width576) {
+          font-size: 18px;
+        }
+      }
+    }
+
+
+  }
+
+  .burger-nav-open {
+    width: 100%;
+    height: 340px;
+    background: white;
+    transition: 1s;
+    @media (max-width: $width576) {
+      width: 100%;
+      height: 250px;
+    }
+
+    .burger-items {
+      .cross-icon {
+        width: 40px;
+        height: 40px;
+        margin: 20px 0 0 20px;
+        transition: 1s;
+        @media (max-width: $width576) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .nav-burger-items {
+
+        margin: 25px 0 0 0;
+        padding: 0;
+        color: black;
+        @media (max-width: $width576) {
+          margin: 15px 0 0 0;
+        }
+        li {
+          text-align: center;
+          margin: 10px;
+          list-style-type: none;
+          font-size: 24px;
+          @media (max-width: $width576) {
+            font-size: 18px;
+          }
+
+
+          a {
+            color: black;
+          }
+        }
+      }
+    }
+
+
+  }
+
+
+  .full-nav {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1180px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    z-index: 2;
+    @media (max-width: 768px) {
+      display: none;
+    }
+    .nav-item {
+      a {
+        font-size: 25px;
+        color: white;
+        position: relative;
+        z-index: 2;
+      }
+      a::before {
+        content: '';
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        transition: 0.2s;
+        transform: scaleX(0);
+      }
+
+      a:hover:before {
+        transform: scaleX(1);
+      }
+
+    }
+  }
+
+
+}

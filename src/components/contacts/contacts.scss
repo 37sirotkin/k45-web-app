@@ -1,0 +1,104 @@
+$width768: 768px;
+$width576: 576px;
+
+.contacts-page {
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  @media (max-width: $width768) {
+    margin: 0;
+  }
+  .main-row {
+    display: flex;
+    width: 100%;
+    @media (max-width: $width768) {
+      flex-direction: column;
+    }
+    .yandex-map {
+      @media (max-width: $width768) {
+        display: flex;
+        justify-content: center;
+      }
+      @media (max-width: $width576) {
+
+      }
+    }
+    .text-info {
+      width: 100%;
+      margin-left: 50px;
+      @media (max-width: $width768) {
+        margin: 0;
+      }
+      &--title {
+        color: white;
+        font-size: 55px;
+        font-weight: bold;
+        @media (max-width: $width768) {
+          font-size: 35px;
+          text-align: center;
+        }
+        @media (max-width: $width576) {
+          font-size: 22px;
+        }
+
+      }
+      &--description {
+        color: white;
+        font-size: 18px;
+        @media (max-width: $width768) {
+          text-align: center;
+        }
+        @media (max-width: $width576) {
+          font-size: 15px;
+        }
+      }
+    }
+
+
+  }
+  .connection {
+    margin-top: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    @media (max-width: $width768) {
+      font-size: 25px;
+      width: 100%;
+    }
+    @media (max-width: $width576) {
+      font-size: 18px;
+    }
+  }
+
+  .row-sn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    @media (max-width: $width768) {
+      justify-content: center;
+    }
+    .sn-item {
+      padding: 20px;
+      border: 3px solid white;
+      border-radius: 50%;
+      box-shadow: 0 0 20px 1px #2429ec;
+      @media (max-width: $width768) {
+        padding: 15px;
+        margin-bottom: 50px;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+        @media (max-width: $width768) {
+          width: 60px;
+          height: 60px;
+        }
+        @media (max-width: $width576) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}

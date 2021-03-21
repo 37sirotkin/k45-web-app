@@ -1,0 +1,143 @@
+$width768: 768px;
+$width576: 576px;
+
+.equipment-page {
+
+  width: 100%;
+  &__title {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+    border-bottom: 2px solid white;
+    @media (max-width: $width576) {
+      font-size: 28px;
+    }
+  }
+
+  &__description {
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    @media (max-width: $width576) {
+      font-size: 15px;
+    }
+  }
+
+  .equipment-items {
+    margin-top: 30px;
+    &--row {
+      display: flex;
+      max-width: 1400px;
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 30px;
+
+      @media (max-width: $width768) {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+      }
+      .mobile-block {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        .item-block {
+          width: 100%;
+          border: 1px inset #ffffff;
+          box-shadow: 0 0 20px #6a6bae;
+          display: flex;
+          flex-direction: column;
+          background: #1d1a1d;
+
+          .eq-icon {
+            width: 170px;
+            height: 170px;
+            align-items: center;
+            display: block;
+            margin: auto;
+          }
+
+          .title {
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            @media (max-width: $width576) {
+              font-size: 20px;
+            }
+          }
+
+          .description {
+            color: white;
+            text-align: center;
+            @media (max-width: $width576) {
+              display: none;
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+
+  .back-items {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--row {
+      display: flex;
+      max-width: 1400px;
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 70px;
+      @media (max-width: $width768)  {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+      }
+      .back-mobile-block {
+        display: flex;
+        justify-content: center;
+
+        .back-block {
+          margin-left: 15px;
+          display: flex;
+          flex-direction: column;
+          @media (max-width: $width768)  {
+            padding-top: 30px;
+            margin: 0;
+          }
+          img {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            max-height: 300px;
+            height: 100%;
+            @media (max-width: $width768)  {
+              justify-content: center;
+            }
+            @media (max-width: $width576) {
+              max-width: 180px;
+              max-height: 180px;
+            }
+          }
+          .title {
+            color: white;
+            font-size: 36px;
+            text-align: center;
+            @media (max-width: $width576) {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+}

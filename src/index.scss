@@ -1,0 +1,22 @@
+body, html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: -apple-system, "Montserrat", BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
